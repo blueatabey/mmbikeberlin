@@ -2,23 +2,40 @@
 <html>
   <head>
     <title>Nameofapp</title>
-    <%= csrf_meta_tags %>
-
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    
+    <meta name="viewport" content="width-device-width, initial-scale=1">
+    <%= csrf_meta_tags %>
   </head>
 
-  <body>
-  	<nav>
-  		<ul>
-  			<li>Home</li>
-  			<li>About</li>
-  			<li>Contact</li>
-  		</ul>
+  <body data-target=".navbar">
+  	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <div class="projectName navbar-brand">
+            <a href="#">Bike Berlin</a>
+          </div> <!-- end brand -->  
+        </div> <!-- end navbar-header -->
+        <div class="navbar-collapse collapse.in">
+        <div class="nav navbar-nav navbar-right">
+  		    <ul class="nav nav-pills" role="tablist">
+      			<li>Home</li>
+      			<li>About</li>
+      			<li>Contact</li>
+  		    </ul>
+        </div> <!-- end navbar-right -->
+        </div> <!-- end collapse.in -->
+      </div> <!-- end container-fluid -->
   	</nav>	
     <%= yield %>
-		<footer>
+		<footer class="footer navbar-fixed-bottom">
 			&copy; 2017 Bike Berlin
-		</footer>    
+		</footer>
+
   </body>
 </html>
