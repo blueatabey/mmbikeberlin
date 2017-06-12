@@ -53,8 +53,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 group :production do
 gem 'pg'
 end
-group :development, :test do
-gem 'sqlite3'
-end
+
 
 
