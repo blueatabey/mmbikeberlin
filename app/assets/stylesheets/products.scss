@@ -1,3 +1,12 @@
-// Place all the styles related to the products controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+thead {
+	color: #35A26D;
+	font-family: Garamond, serif;
+	letter-spacing: 0.25em;
+	text-transform: uppercase;
+	background-color: #e7e7e7;
+}
+
+th {
+	width: 250px;
+	padding-top: 5px;
+}

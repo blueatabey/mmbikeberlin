@@ -39,6 +39,10 @@ h2 {
 	margin-right: auto;
 }
 
+#about {
+	margin-top: 100px;
+}
+
 footer {
 	text-align: center;
 	height: 50px;
@@ -46,7 +50,9 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-	h1 {
+	h1,
+	#contact,
+	#about	 {
 		margin-top: 150px;
 	}
 }
