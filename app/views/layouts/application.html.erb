@@ -27,11 +27,10 @@
         <div class="navbar-collapse collapse.in">
         <div class="nav navbar-nav navbar-right">
   		    <ul class="nav nav-pills" role="tablist">
-      			<li><a href="../static_pages/index">Home</a></li>
-      			<li><a href="../static_pages/about">About</a></li>
-            <li><a href="../products">Products</a></li>
-      			<li><a href="../static_pages/contact">Contact</a></li>
-
+            <%= link_to "Home", static_pages_index_path %>
+            <%= link_to "About", static_pages_about_path %>
+      			<%= link_to "Products", products_path %>
+            <%= link_to "Contact", static_pages_contact_path %>		 
   		    </ul>
         </div> <!-- end navbar-right -->
         </div> <!-- end collapse.in -->
