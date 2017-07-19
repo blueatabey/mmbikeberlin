@@ -16,12 +16,16 @@ ul a {
 	letter-spacing: 0.25em;
 	background-color: #35A26D;
 	border-radius: 5px;
-	padding: 20px;	
-	margin: 5px;
+	padding: 20px;
+	margin: 10px;	
 }
 
 ul a:hover {
 	text-decoration: none;
+}
+
+.nav-pills {
+	margin-top: -25px;
 }
 
 .carousel-caption {

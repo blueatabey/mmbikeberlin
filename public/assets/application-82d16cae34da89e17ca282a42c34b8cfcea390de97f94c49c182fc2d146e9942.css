@@ -1,0 +1,250 @@
+/* line 1, /Users/Mariana/Desktop/mmbikeberlin/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  margin: 33px;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 10, /Users/Mariana/Desktop/mmbikeberlin/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 16, /Users/Mariana/Desktop/mmbikeberlin/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 22, /Users/Mariana/Desktop/mmbikeberlin/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 25, /Users/Mariana/Desktop/mmbikeberlin/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+
+/* line 30, /Users/Mariana/Desktop/mmbikeberlin/app/assets/stylesheets/scaffolds.scss */
+th {
+  padding-bottom: 5px;
+}
+
+/* line 34, /Users/Mariana/Desktop/mmbikeberlin/app/assets/stylesheets/scaffolds.scss */
+td {
+  padding: 0 5px 7px;
+}
+
+/* line 39, /Users/Mariana/Desktop/mmbikeberlin/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 44, /Users/Mariana/Desktop/mmbikeberlin/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 48, /Users/Mariana/Desktop/mmbikeberlin/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 54, /Users/Mariana/Desktop/mmbikeberlin/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px 7px 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 61, /Users/Mariana/Desktop/mmbikeberlin/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px -7px 0;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 71, /Users/Mariana/Desktop/mmbikeberlin/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 77, /Users/Mariana/Desktop/mmbikeberlin/app/assets/stylesheets/scaffolds.scss */
+label {
+  display: block;
+}
+/* line 1, /Users/Mariana/Desktop/mmbikeberlin/app/assets/stylesheets/static_pages.scss */
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+/* line 5, /Users/Mariana/Desktop/mmbikeberlin/app/assets/stylesheets/static_pages.scss */
+.btn-default:hover {
+  background-color: #35A26D;
+}
+
+/* line 9, /Users/Mariana/Desktop/mmbikeberlin/app/assets/stylesheets/static_pages.scss */
+.projectName a {
+  color: #35A26D;
+  text-decoration: none;
+}
+
+/* line 14, /Users/Mariana/Desktop/mmbikeberlin/app/assets/stylesheets/static_pages.scss */
+ul a {
+  display: inline-block;
+  letter-spacing: 0.25em;
+  background-color: #35A26D;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+}
+
+/* line 23, /Users/Mariana/Desktop/mmbikeberlin/app/assets/stylesheets/static_pages.scss */
+ul a:hover {
+  text-decoration: none;
+}
+
+/* line 27, /Users/Mariana/Desktop/mmbikeberlin/app/assets/stylesheets/static_pages.scss */
+.nav-pills {
+  margin-top: -25px;
+}
+
+/* line 31, /Users/Mariana/Desktop/mmbikeberlin/app/assets/stylesheets/static_pages.scss */
+.carousel-caption {
+  color: #35A26D;
+  font-size: 20px;
+  letter-spacing: 0.25em;
+  text-shadow: 2px 2px black;
+  font-weight: 900;
+}
+
+/* line 39, /Users/Mariana/Desktop/mmbikeberlin/app/assets/stylesheets/static_pages.scss */
+#carousel-example-generic {
+  margin-top: 100px;
+}
+
+/* line 43, /Users/Mariana/Desktop/mmbikeberlin/app/assets/stylesheets/static_pages.scss */
+.item img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 49, /Users/Mariana/Desktop/mmbikeberlin/app/assets/stylesheets/static_pages.scss */
+.carousel-control {
+  background-image: none !important;
+}
+
+/* line 53, /Users/Mariana/Desktop/mmbikeberlin/app/assets/stylesheets/static_pages.scss */
+.glyphicon {
+  color: #35A26D;
+}
+
+/* line 57, /Users/Mariana/Desktop/mmbikeberlin/app/assets/stylesheets/static_pages.scss */
+.carousel-indicators .active {
+  background-color: #35A26D;
+}
+
+/* line 61, /Users/Mariana/Desktop/mmbikeberlin/app/assets/stylesheets/static_pages.scss */
+h1 {
+  margin-top: 150px;
+  font-family: Garamond, serif;
+  color: #35A26D;
+  text-align: center;
+  letter-spacing: 0.25em;
+}
+
+/* line 69, /Users/Mariana/Desktop/mmbikeberlin/app/assets/stylesheets/static_pages.scss */
+h2,
+h3,
+p {
+  text-align: center;
+}
+
+/* line 75, /Users/Mariana/Desktop/mmbikeberlin/app/assets/stylesheets/static_pages.scss */
+h3 {
+  letter-spacing: 0.25em;
+}
+
+/* line 79, /Users/Mariana/Desktop/mmbikeberlin/app/assets/stylesheets/static_pages.scss */
+.img-responsive {
+  padding: 20px;
+}
+
+/* line 83, /Users/Mariana/Desktop/mmbikeberlin/app/assets/stylesheets/static_pages.scss */
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 89, /Users/Mariana/Desktop/mmbikeberlin/app/assets/stylesheets/static_pages.scss */
+#about {
+  margin-top: 100px;
+}
+
+/* line 93, /Users/Mariana/Desktop/mmbikeberlin/app/assets/stylesheets/static_pages.scss */
+#card a {
+  color: #35A26D;
+}
+
+/* line 97, /Users/Mariana/Desktop/mmbikeberlin/app/assets/stylesheets/static_pages.scss */
+#card a:hover {
+  text-decoration: none;
+  font-style: italic;
+}
+
+/* line 102, /Users/Mariana/Desktop/mmbikeberlin/app/assets/stylesheets/static_pages.scss */
+footer {
+  text-align: center;
+  height: 50px;
+  background-color: #35A26D;
+}
+
+@media screen and (max-width: 480px) {
+  /* line 109, /Users/Mariana/Desktop/mmbikeberlin/app/assets/stylesheets/static_pages.scss */
+  h1,
+  #contact,
+  #about {
+    margin-top: 250px;
+  }
+
+  /* line 114, /Users/Mariana/Desktop/mmbikeberlin/app/assets/stylesheets/static_pages.scss */
+  #carousel-example-generic {
+    margin-top: 300px;
+  }
+
+  /* line 117, /Users/Mariana/Desktop/mmbikeberlin/app/assets/stylesheets/static_pages.scss */
+  .carousel-control {
+    background: none !important;
+  }
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
