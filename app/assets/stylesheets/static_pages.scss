@@ -2,11 +2,11 @@ body {
 	font-family: Helvetica, sans-serif;
 }
 
-input {
-	color: red;
+.btn-default:hover {
+	background-color: #35A26D;
 }
 
-.projectName a{
+.projectName a {
 	color: #35A26D;
 	text-decoration: none;
 }
@@ -17,12 +17,11 @@ ul a {
 	background-color: #35A26D;
 	border-radius: 5px;
 	padding: 20px;	
-	margin: 10px;
+	margin: 5px;
 }
 
 ul a:hover {
 	text-decoration: none;
-	text-transform: uppercase;
 }
 
 .carousel-caption {
@@ -51,6 +50,10 @@ ul a:hover {
 	color: #35A26D;
 }
 
+.carousel-indicators .active{
+	background-color: #35A26D;
+}
+	
 h1 {
 	margin-top: 150px;
 	font-family: Garamond, serif;
@@ -59,8 +62,14 @@ h1 {
 	letter-spacing: 0.25em;
 }
 
-h2 {
+h2, 
+h3,
+p {
 	text-align: center;
+}
+
+h3 {
+	letter-spacing: 0.25em;
 }
 
 .img-responsive {
@@ -75,6 +84,15 @@ h2 {
 
 #about {
 	margin-top: 100px;
+}
+
+#card a {
+	color: #35A26D;
+}
+
+#card a:hover {
+	text-decoration: none;
+	font-style: italic;
 }
 
 footer {
