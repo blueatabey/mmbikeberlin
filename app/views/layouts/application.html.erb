@@ -24,11 +24,14 @@
 						<a href="#">Bike Berlin</a>
 					</div> <!-- end brand -->  
 				</div> <!-- end navbar-header -->
-				<%= form_with(url: products_path, method: 'get') do |form| %>
-					<%= form.label :q, 'Search for:' %>
-					<%= form.text_field :q, id: 'q', value: params[:q] %>
-					<%= form.submit 'Search' %>
-				<% end %>    
+				<%= form_tag("/products", method: "get", class: "navbar-form", role:"search") do %>
+      		<div class="input-group">
+      			<%= text_field_tag(:q, nil, class: "form-control", placeholder: "Product Name") %>
+      			<span class="input-group-btn">
+       			<%= submit_tag("Search", class: "btn btn-default") %>
+       			</span>
+      		</div> <!-- end input-group -->
+			<% end %>   
 				<div class="navbar-collapse collapse.in">
 				<div class="nav navbar-nav navbar-right">
 					<ul class="nav nav-pills" role="tablist">
