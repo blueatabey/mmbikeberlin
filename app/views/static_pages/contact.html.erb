@@ -10,3 +10,24 @@
 <h3>Hours</h3>
 	<p>Everyday: 12PM-7PM</p>
 </div>	
+<h1>Contact Us</h1>
+<%= flash[:notice] %>
+<%= form_with(url: "/static_pages/thank_you") do |form| %>
+	<div class="row">
+		<div class="col-md-4">
+			<div class="form-group">
+				<%= form.label :name %>
+				<%= form.text_field :name, class: "form-control", placeholder:"Enter Name" %>
+			</div> <!-- end Name form-group -->	
+			<div class="form-group">
+				<%= form.label :email, "Email Address" %>
+				<%= form.text_field :email, class: "form-control", placeholder: "Enter Email" %>
+			</div> <!-- end Email form-group	 -->
+			<div class="form-group">
+				<%= form.label :message %>
+				<%= form.text_area :message, class: "form-control", placeholder: "Enter Message" %>
+			</div> <!-- end Message form-group -->	
+		</div> <!-- end col -->	
+	</div> <!-- end row -->	
+	<%= form.submit "Send" %>
+	<% end %>
