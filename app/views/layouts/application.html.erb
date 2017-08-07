@@ -3,46 +3,62 @@
 	<head>
 		<title>mmBikeBerlin</title>
 		
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 
+		<script src="https://use.fontawesome.com/09c9551280.js"></script>
+		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+ 
 		<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		
 		<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 		
 		<meta name="viewport" content="width-device-width, initial-scale=1">
 		<%= csrf_meta_tags %>
 	</head>
 
 	<body data-target=".navbar">
-		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-			<div class="container-fluid">
-				<div class="navbar-header">
-					<div class="projectName navbar-brand">
+		<p class="notice"><%= notice %></p>
+		<p class="alert"><%= alert %></p>
+		<nav class="navbar sticky-top navbar-toggleable-md navbar-light" style="background-color: #eee;" >
+			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>	
+				<div class="projectName navbar-brand">
 						<%= link_to "Bike Berlin", static_pages_index_path %>
-					</div> <!-- end brand -->  
-				</div> <!-- end navbar-header -->
-				<%= form_tag("/products", method: "get", class: "navbar-form", role:"search") do %>
+				</div> <!-- end brand --> 
+				<br> 
+				<%= form_tag("/products", method: "get", class: "form-inline my-2 my-lg-0", role:"search") do %>
       		<div class="input-group">
       			<%= text_field_tag(:q, nil, class: "form-control", placeholder: "Product Name") %>
       			<span class="input-group-btn">
        			<%= submit_tag("Search", class: "btn btn-default") %>
        			</span>
       		</div> <!-- end input-group -->
-			<% end %>  			 
-				<div class="navbar-collapse collapse.in">
-				<div class="nav navbar-nav navbar-right">
-					<ul class="nav nav-pills" role="tablist">
+			<% end %> 
+			<br> 			 
+				<div class="collapse navbar-collapse" id="navbarToggler">
+				
+					<ul class="navbar-nav mr-auto mt-2 mt-md-0">
 						<%= link_to "Home", static_pages_index_path %>
 						<%= link_to "About", static_pages_about_path %>
 						<%= link_to "Products", products_path %>
 						<%= link_to "Contact", static_pages_contact_path %>		 
 					</ul>
-				</div> <!-- end navbar-right -->
-				</div> <!-- end collapse.in -->
-			</div> <!-- end container-fluid -->
+					</div> <!-- end collapse.in -->
+					<ul class="nav">
+						<li>
+						<% if user_signed_in? %>
+							<%= link_to('Logout', destroy_user_session_path, method: :delete) %>
+						<%else %>
+							<%= link_to('Login', new_user_session_path) %>
+						<% end %>			
+						</li>
+				
+				
+			
 		</nav>	
 		<%= yield %>
 		<footer class="footer navbar-fixed-bottom">
