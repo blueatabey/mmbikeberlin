@@ -2,13 +2,11 @@ body {
   background-color: #fff;
   color: #333;
   margin: 33px;
-  font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
 }
 
 p, ol, ul, td {
-  font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
 }
@@ -65,7 +63,7 @@ div {
     font-size: 12px;
     margin: -7px -7px 0;
     background-color: #c00;
-    color: #fff;
+    color: #35A26D !important;
   }
 
   ul li {
@@ -77,3 +75,12 @@ div {
 label {
   display: block;
 }
+
+#login {
+  margin-top: 150px;
+}
+
+#login-fields {
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  }
