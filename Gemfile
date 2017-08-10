@@ -57,6 +57,8 @@ end
 
 gem 'devise', '~> 4.3'
 
+gem 'cancancan', '~> 2.0'
+
 
 
 
