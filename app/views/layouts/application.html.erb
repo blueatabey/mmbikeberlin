@@ -20,8 +20,14 @@
 	</head>
 
 	<body data-target=".navbar">
-		<p class="notice"><%= notice %></p>
-		<p class="alert"><%= alert %></p>
+	<!-- Flash Notice Tags -->
+		<% if notice %>
+			<div id="notice" class="alert alert-success"><%= notice %></div>
+		<% end %>
+		<% if alert %>	
+			<div id="alert" class="alert alert-danger" role="alert" style="display: none;"><%= alert %></div>
+		<% end %>	
+	<!-- Navigation -->
 		<nav class="navbar sticky-top navbar-toggleable-md navbar-light" style="background-color: #eee;" >
 			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -55,10 +61,7 @@
 						<%else %>
 							<%= link_to('Login', new_user_session_path) %>
 						<% end %>			
-						</li>
-				
-				
-			
+						</li>				
 		</nav>	
 		<%= yield %>
 		<footer class="footer navbar-fixed-bottom">

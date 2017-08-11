@@ -14,6 +14,6 @@ class OrdersController < ApplicationController
 	def destroy
 	end
 
-before_action :authenticate_user!		
+before_filter :authenticate_user!		
 end	
 
