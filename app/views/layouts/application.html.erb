@@ -14,9 +14,6 @@
 		
 		<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-
-		<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-		<script src="/javascripts/scripts.js"></script>
 		
 		<meta name="viewport" content="width-device-width, initial-scale=1">
 		<%= csrf_meta_tags %>
@@ -28,7 +25,7 @@
 			<div id="notice" class="alert alert-success"><%= notice %></div>
 		<% end %>
 		<% if alert %>	
-			<div id="alert" class="alert alert-danger" role="alert" style="display: none;"><%= alert %></div>
+			<div id="alert" class="alert alert-danger" role="alert"><%= alert %></div>
 		<% end %>	
 	<!-- Navigation -->
 		<nav class="navbar sticky-top navbar-toggleable-md navbar-light" style="background-color: #eee;" >
