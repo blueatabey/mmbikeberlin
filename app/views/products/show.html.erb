@@ -9,7 +9,7 @@
   <strong>Description:</strong>
   <%= @product.description %>
 </p>
-
+<%= render 'new_comment' %>
 <p>
   <strong>Image url:</strong>
   <%= image_tag(@product.image_url, class: "img-fluid") %>
