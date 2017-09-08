@@ -14,4 +14,4 @@
 			<hr>	
 	<% end %>
 </div>
-<%= will_paginate @comments, :style => 'color:blue' %>
+<%= will_paginate @comments, renderer: BootstrapPagination:: Rails %>
