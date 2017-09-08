@@ -107,6 +107,26 @@ h3 {
 	text-align: center;	
 }
 
+.pagination {
+	color: #000 !important;
+}
+
+.pagination a {
+	font-size: 20px;
+	text-decoration: none;
+	margin: auto;
+}
+
+.pagination a:hover,
+.pagination a:visited {
+	color: #000 !important;
+}
+
+.current {
+	color: #35A26D;
+	font-size: 24px;
+}
+	
 footer {
 	text-align: center;
 	height: 50px;

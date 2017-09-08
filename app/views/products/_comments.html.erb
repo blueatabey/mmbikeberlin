@@ -1,6 +1,7 @@
 <br>
 <div class="product-reviews">
 	<% @comments.each do |comment| %>
+
 		<div class="row">
 		<hr>
 			<div class="posted-reviews">			
@@ -12,6 +13,5 @@
 		</div>
 			<hr>	
 	<% end %>
-	
 </div>
-	
+<%= will_paginate @comments, :style => 'color:blue' %>

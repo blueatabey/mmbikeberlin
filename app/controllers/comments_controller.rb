@@ -11,9 +11,9 @@ class CommentsController < ApplicationController
 				format.html { redirect_to @product, alert: 'Review was not saved succesfully.' }
 				format.json { render json: @comment.errors, status: :unprocessable_entity }
 				end
-			end		
+			end	
 	end
-
+	
 	def destroy
 		
 	end
@@ -23,6 +23,5 @@ private
 	def comment_params
 		params.require(:comment).permit(:user_id, :body, :rating)		
 	end
-	
 end
 
