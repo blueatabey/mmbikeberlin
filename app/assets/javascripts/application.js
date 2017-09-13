@@ -14,5 +14,5 @@
 //= require turbolinks
 //= require_tree .
 //= require jquery.raty
-//= require site.js.erb
+
 
