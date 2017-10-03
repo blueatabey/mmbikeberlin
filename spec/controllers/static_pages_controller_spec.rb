@@ -7,7 +7,7 @@ describe StaticPagesController, type: :controller do
 		end	
 
 		it 'responds successfully with an HTTP 200 status code' do
-			expect(response).to be_ok
+			expect(response).to be_ok 
 		end
 		
 		it 'renders the index template' do	

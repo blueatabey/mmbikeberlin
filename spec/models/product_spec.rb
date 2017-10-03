@@ -4,8 +4,10 @@ require 'rails_helper'
 		context "when the product has comments" do
 
 		before do
-			@product = Product.create!(name: "Pet Cargo Bike")	
-			@user = User.create!(first_name: "Trixie", last_name: "Waverly", email: "twaverly@gmail.com", password: "trixiebike123")
+			# @product = Product.create!(name: "Pet Cargo Bike")	
+			# @user = User.create!(first_name: "Trixie", last_name: "Waverly", email: "twaverly@gmail.com", password: "trixiebike123")
+			@user = FactoryGirl.create(:user)
+			@product = FactoryGirl.create(:product)
 			@product.comments.create!(rating: 1, user: @user, body: "Awful bike!")
 			@product.comments.create!(rating: 3, user: @user, body: "OK bike!")
 			@product.comments.create!(rating: 5, user: @user, body: "Great bike!")
