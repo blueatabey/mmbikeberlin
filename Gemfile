@@ -38,6 +38,7 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'sqlite3' 
   gem 'rspec-rails', '~> 3.6'
+  gem 'rails-controller-testing'
   gem 'database_cleaner'
 end
 
@@ -66,8 +67,6 @@ gem 'will_paginate', '~> 3.1.0'
 gem 'will_paginate-bootstrap'
 
 gem 'font-awesome-rails'
-
-gem 'rails-controller-testing'
 
 
 
