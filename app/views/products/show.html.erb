@@ -20,12 +20,13 @@
 </p>
 
 <p>
-	<strong>Price:</strong>
-	<%= @product.price %>
+	<strong>Price:</strong> 
+	&euro;<%= @product.price %>
 </p>
 
 <%= form_tag "/payments/create" do |form| %>
   <%= render partial: "shared/stripe_checkout_button" %>
+  <%= hidden_field_tag(:parent_id, @product.id) %>
 <% end %>  
 
 <p>Average Rating:</p>
